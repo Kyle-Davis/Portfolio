@@ -23,3 +23,4 @@ def updatefieldtool(curvalue, newvalue, fc=featureClass):
 updatefieldtool(curvalue='Commercial', newvalue='C-1')
 
 updatefieldtool(curvalue='Residential', newvalue='R-1')
+
