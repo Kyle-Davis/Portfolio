@@ -1,12 +1,10 @@
 # Kyle Davis 
 # Created: Dec 12, 2016
-
 # This basic script acts as a stand-alone bulk field updater. This method is faster than using standard field calculation in ArcMap.
 
 import arcpy
 
 arcpy.env.workspace = r"C:\Users\kydavis\Documents\VistaCity.gdb"
-
 featureClass = r"C:\Users\kydavis\Documents\VistaCity.gdb\zoning"
 
 # List fields to be changed here, refer to arcpy documentation regarding FID shortcuts
@@ -21,9 +19,7 @@ def updatefieldtool(curvalue, newvalue, fc=featureClass):
 		       updateCursor.updateRow(row)
 	print("The specified values have been updated")
 
-
 # function calls
 updatefieldtool(curvalue='Commercial', newvalue='C-1')
 
 updatefieldtool(curvalue='Residential', newvalue='R-1')
-
