@@ -13,8 +13,6 @@ workorderList = [
 
 ]
 
-
-
 last = str(len(workorderList))
 print('Started at {}'.format(str(datetime.now())))
 
@@ -30,9 +28,6 @@ for workorder in workorderList:
                r'C:\Users\kydavis\Desktop\workspace\python\test' + workorder + r'.gdb\SpliceClosure',
                r'C:\Users\kydavis\Desktop\workspace\python\test' + workorder + r'.gdb\Structure',
                r'C:\Users\kydavis\Desktop\workspace\python\test' + workorder + r'.gdb\transmedia']
-
-
-
 
     # create new scratch gdb
     arcpy.CreateFileGDB_management("C:/Users/kydavis/Desktop/workspace/python", "test" + workorder + ".gdb")
@@ -238,7 +233,6 @@ for workorder in workorderList:
 
 
     print(workorder + " / " + last + " complete")
-
 
     # delete scratch gdb
     if arcpy.Exists("C:/Users/kydavis/Desktop/workspace/python/test" + workorder + ".gdb"):
