@@ -1,3 +1,6 @@
+# needs to be made more pythonic
+# code can be made a bit more concise, and efficient
+
 import arcpy, os, shutil
 from datetime import datetime
 
