@@ -1,4 +1,4 @@
-import arcpy, os, shutil, psycopg2
+import arcpy, os, shutil
 from datetime import datetime
 
 workorderList = [
@@ -33,8 +33,6 @@ for workorder in workorderList:
 
 
 
-    # if os.path.isdir("C:/Users/kydavis/Desktop/workspace/python/test" + workorder + ".gdb"):  
-    # shutil.rmtree("C:/Users/kydavis/Desktop/workspace/python/test" + workorder + ".gdb")  
 
     # create new scratch gdb
     arcpy.CreateFileGDB_management("C:/Users/kydavis/Desktop/workspace/python", "test" + workorder + ".gdb")
@@ -238,8 +236,7 @@ for workorder in workorderList:
 
     print(workorderid2 + " gdb created.")
 
-    # shutil.make_archive(r"C:/Users/kydavis/Desktop/workspace/deliverables/LLD" + os.sep + workorderid2 + "_LLD" + exportdate + ".gdb/LLD" + os.sep + workorderid2 + "_LLD" + exportdate + ".gdb"", 'zip', r"C:/Users/kydavis/Desktop/workspace/deliverables/LLD" + os.sep + workorderid2 + "_LLD" + exportdate + ".gdb")
-    # print("gdb zipped")
+
     print(workorder + " / " + last + " complete")
 
 
