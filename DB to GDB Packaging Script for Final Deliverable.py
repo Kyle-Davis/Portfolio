@@ -184,7 +184,7 @@ for workorder in workorderList:
         arcpy.CalculateField_management(in_table=layer, field="WORKORDERID", expression="'{}'".format(workorderid2),
                                         expression_type="PYTHON_9.3", code_block="#")
 
-    # copy template GDB with workorderid name
+    # copy features to template GDB
     arcpy.env.workspace = "C:/Users/kydavis/Desktop/workspace"
     arcpy.Copy_management("C:/Users/kydavis/Desktop/workspace/templates/LLD_GDB_10_25_2017_FromWLS.gdb",
                           "C:/Users/kydavis/Desktop/workspace/deliverables/LLD" + os.sep + workorderid2 + "_LLD" + exportdate + ".gdb")
