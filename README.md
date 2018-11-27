@@ -3,4 +3,4 @@ Kyle Davis
 -*Professional GIS Portfolio*-
  KyleDavisGIS@gmail.com
  
- More scripts will be added soon
+ This is a work in progress. More scripts will be added soon
